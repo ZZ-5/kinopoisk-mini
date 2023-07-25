@@ -1,0 +1,117 @@
+.search {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    width: 100%;
+    max-width: 59rem;
+    position: relative;
+
+    &__input {
+        width: 100%;
+        max-width: 59rem;
+        padding: 1.5rem 2.5rem;
+        font-size: 2rem;
+        font-weight: 300;
+        color: white;
+        background-color: black;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+    }
+
+    &__button {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+        border-radius: 50%;
+        border: none;
+        width: 4rem;
+        height: 4rem;
+        background-color: rgba(144, 105, 255, 1);
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-window {
+        position: absolute;
+        top: 5.5rem;
+        background-color: whitesmoke;
+        width: 100%;
+        border-radius: 1rem;
+        overflow: auto;
+        height: auto;
+        max-height: 50rem;
+    }
+
+    .result {
+        display: flex;
+        padding: 1rem;
+
+        &__poster {
+            width: 7rem;
+            border-radius: 1rem;
+            margin-right: 3rem;
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        &__names {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__name {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        &__alternativeNameAndYear {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: gray;
+        }
+
+        &__rating {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+        }
+
+        .kp,
+        .imdb {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: gray;
+        }
+
+        .kp-green,
+        .imdb-green {
+            color: green;
+        }
+
+        .kp-red,
+        .imdb-red {
+            color: red;
+        }
+    }
+
+    .result:hover {
+        background-color: gainsboro;
+        cursor: pointer;
+    }
+}

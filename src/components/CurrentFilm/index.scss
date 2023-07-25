@@ -1,0 +1,80 @@
+.current-film {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    height: fit-content;
+
+    padding: 1rem;
+    box-shadow: 0 0 10px white;
+    border-radius: 3rem;
+
+    .img {
+        width: 100%;
+        max-width: 32rem;
+        height: 50rem;
+        border-radius: 3rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+        font-size: 3rem;
+        font-weight: 400;
+
+        span {
+            font-weight: 700;
+            text-decoration: underline;
+            color: rgb(220, 161, 11);
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 8rem;
+            margin-bottom: 5rem
+        }
+
+
+        &__year,
+        &__country,
+        &__rating,
+        &__description,
+        &__genres,
+        &__length {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .icon {
+            width: 5rem;
+            height: 4rem;
+        }
+
+        .kp,
+        .imdb {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    .actors__link {
+        cursor: pointer;
+        border: none;
+        text-decoration: solid;
+        background-color: transparent;
+        color: goldenrod;
+        font-size: 3rem;
+        margin-left: 1rem;
+
+    }
+
+    .actors__link:hover {
+        text-decoration: underline;
+    }
+}

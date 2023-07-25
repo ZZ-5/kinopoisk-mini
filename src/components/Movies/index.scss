@@ -1,0 +1,25 @@
+.movies {
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 7rem;
+    color: white;
+    margin-bottom: 4rem;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem 6.6rem;
+    width: 100%;
+
+    margin-bottom: 4rem;
+  }
+}
